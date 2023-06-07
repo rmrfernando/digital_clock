@@ -27,6 +27,9 @@ function changeTime()
      let hour = date.getHours();
      let min = date.getMinutes();
      let sec = date.getSeconds();
+     let amorpm;
+    //  let day=date.getDay();
+    //  let daytype;
 
      hourSpan.textContent=hour;
      minuteSpan.textContent=min;
@@ -40,7 +43,23 @@ function changeTime()
      amorpm="PM";
 
      amorpmSpan.textContent=amorpm;
-     
+
+    //  if (day==0){
+    //     daytype="Sunday";
+    //  }if(day==1){
+    //     daytype="Monday";
+    //  }if(day==2){
+    //     daytype="Tuesday";
+    //  }if(day==3){
+    //     daytype="Wednesday";
+    //  }if(day==4){
+    //     daytype="Thursday";
+    // }if(day==5){
+    //     daytype="Friday";
+    //  }else{
+    //     daytype="Saturday"
+    //  }
+    //  daytypeSpan.textContent=daytype;
 }
 
 setInterval(changeTime,1000);
